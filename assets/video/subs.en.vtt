@@ -1,0 +1,501 @@
+WEBVTT
+
+1
+00:00:03.920 --> 00:00:08.087
+Gravity bends light. The Sun bends the light that passes close to it.
+
+2
+00:00:08.520 --> 00:00:12.528
+Far beyond the planets, this bent light comes together, as in a lens.
+
+3
+00:00:12.953 --> 00:00:15.816
+Some scientists propose to put a telescope there,
+
+4
+00:00:15.816 --> 00:00:18.386
+and take pictures of planets of other stars.
+
+5
+00:00:18.820 --> 00:00:22.292
+This is called imaging with the solar gravitational lens.
+
+6
+00:00:22.720 --> 00:00:24.010
+A 2026 paper asks:
+
+7
+00:00:24.010 --> 00:00:29.242
+in a simple model of this imaging, what limits the detail of the picture?
+
+8
+00:00:29.687 --> 00:00:33.614
+The paper does not say whether or when a mission could take such a picture.
+
+9
+00:00:35.153 --> 00:00:36.721
+In the paper's baseline,
+
+10
+00:00:36.721 --> 00:00:40.706
+the target has an Earth-like surface, and is 30 parsecs away.
+
+11
+00:00:41.153 --> 00:00:44.502
+The telescope is 650 times as far from the
+
+12
+00:00:44.502 --> 00:00:48.409
+Sun as the Earth is. Its opening is 1 metre wide.
+
+13
+00:00:49.353 --> 00:00:52.342
+The telescope moves across the image of the planet,
+
+14
+00:00:52.342 --> 00:00:54.627
+one step for each pixel of the picture.
+
+15
+00:00:55.053 --> 00:01:04.395
+The picture has 128 by 128 pixels. One pixel covers 99.5 kilometres of the planet.
+
+16
+00:01:04.820 --> 00:01:05.623
+At each step,
+
+17
+00:01:05.623 --> 00:01:08.647
+the telescope gets the light of its own pixel. It
+
+18
+00:01:08.647 --> 00:01:12.228
+also gets a faint blur of light from all the other pixels.
+
+19
+00:01:12.653 --> 00:01:18.137
+So the data are a mix. A computation must take the mix apart to recover the picture.
+
+20
+00:01:19.184 --> 00:01:21.869
+The paper looks at three things that limit the picture.
+
+21
+00:01:22.318 --> 00:01:27.720
+The first is the corona, the faint glow around the Sun. Its light adds random noise.
+
+22
+00:01:28.151 --> 00:01:31.265
+The second is clouds. They hide parts of the surface,
+
+23
+00:01:31.265 --> 00:01:33.792
+and they change from one visit to the next.
+
+24
+00:01:34.218 --> 00:01:37.625
+The third is the shape of the Sun's gravity. It is not
+
+25
+00:01:37.625 --> 00:01:41.979
+perfectly round. So the lens spreads each point into a small pattern,
+
+26
+00:01:41.979 --> 00:01:43.052
+called a caustic.
+
+27
+00:01:43.484 --> 00:01:47.413
+The paper puts all three into one simple model. In this model,
+
+28
+00:01:47.413 --> 00:01:51.277
+the parts add up, and the random parts follow the bell curve.
+
+29
+00:01:51.718 --> 00:01:54.350
+For this model, the paper computes a bound:
+
+30
+00:01:54.350 --> 00:01:57.533
+the smallest error that an unbiased method can have.
+
+31
+00:01:57.951 --> 00:02:02.000
+This bound belongs to the model. It is not a limit for every method.
+
+32
+00:02:03.518 --> 00:02:06.831
+A picture can be split into patterns of different sizes,
+
+33
+00:02:06.831 --> 00:02:08.724
+from wide patterns to fine ones.
+
+34
+00:02:09.151 --> 00:02:12.542
+The paper finds the bound for each size of pattern on its own.
+
+35
+00:02:12.984 --> 00:02:17.516
+Then it removes one barrier at a time, and sees how much the bound goes down.
+
+36
+00:02:17.951 --> 00:02:21.944
+For the widest patterns, about 1,600 kilometres and larger,
+
+37
+00:02:21.944 --> 00:02:24.989
+clouds cause the largest loss of information.
+
+38
+00:02:25.418 --> 00:02:28.946
+For the finest patterns, 200 kilometres and smaller,
+
+39
+00:02:28.946 --> 00:02:32.339
+the noise from the corona causes the largest loss.
+
+40
+00:02:32.784 --> 00:02:37.608
+In between, the order changes with the settings. The paper calls it undetermined.
+
+41
+00:02:38.051 --> 00:02:41.742
+The shape of the Sun's gravity matters too. In one setting,
+
+42
+00:02:41.742 --> 00:02:44.745
+the information at one size of pattern vanishes.
+
+43
+00:02:45.784 --> 00:02:48.323
+Which barrier sets the finest detail? That
+
+44
+00:02:48.323 --> 00:02:50.922
+depends on how we define the finest detail.
+
+45
+00:02:51.351 --> 00:02:52.222
+For each size,
+
+46
+00:02:52.222 --> 00:02:55.207
+compare the signal with the error. Call the size
+
+47
+00:02:55.207 --> 00:02:58.503
+seen if the signal is at least as large as the error.
+
+48
+00:02:58.951 --> 00:03:01.350
+With one kind of model cloud,
+
+49
+00:03:01.350 --> 00:03:06.644
+the signal falls below the error only in a band of middle sizes,
+
+50
+00:03:06.644 --> 00:03:08.877
+from 910 to 531 kilometres.
+
+51
+00:03:09.318 --> 00:03:11.438
+Rule one goes from wide to fine,
+
+52
+00:03:11.438 --> 00:03:16.142
+and stops at the first size that is not seen. It stops before the band.
+
+53
+00:03:16.584 --> 00:03:19.494
+Rule two takes the finest size that is seen,
+
+54
+00:03:19.494 --> 00:03:22.204
+even after a gap. It jumps over the band.
+
+55
+00:03:22.651 --> 00:03:27.507
+So, over 120 settings, rule one makes clouds the limit in 93,
+
+56
+00:03:27.507 --> 00:03:33.318
+and rule two makes the corona the limit in 80. The rest are undetermined.
+
+57
+00:03:33.751 --> 00:03:36.424
+The answer also changes with the other rules,
+
+58
+00:03:36.424 --> 00:03:38.978
+the threshold, and the kind of model cloud.
+
+59
+00:03:39.918 --> 00:03:42.531
+Now take away the clouds and
+
+60
+00:03:42.531 --> 00:03:46.917
+the shape of the Sun's gravity. Then the finest
+
+61
+00:03:46.917 --> 00:03:51.956
+size seen is 637 kilometres after 1 year of observing,
+
+62
+00:03:51.956 --> 00:03:56.063
+354 after 10 years, and 199 after 100 years.
+
+63
+00:03:57.584 --> 00:04:00.214
+The model's clouds are simple. Real clouds
+
+64
+00:04:00.214 --> 00:04:03.093
+may differ. So the paper measures real clouds.
+
+65
+00:04:03.518 --> 00:04:05.978
+It uses pictures of the Earth from EPIC,
+
+66
+00:04:05.978 --> 00:04:10.652
+a camera on the DSCOVR spacecraft that sees the whole day side of the Earth.
+
+67
+00:04:11.084 --> 00:04:13.765
+The paper uses four months of 2024:
+
+68
+00:04:13.765 --> 00:04:18.512
+January, April, July and October. Each day gives two pictures,
+
+69
+00:04:18.512 --> 00:04:22.111
+near midnight and near noon, in universal time.
+
+70
+00:04:22.551 --> 00:04:24.253
+For each spot on the Earth,
+
+71
+00:04:24.253 --> 00:04:27.719
+it takes a low value from the month's pictures. This is
+
+72
+00:04:27.719 --> 00:04:31.249
+the surface. The rest of each picture is the cloud part.
+
+73
+00:04:31.684 --> 00:04:36.212
+How fast the measured clouds change from day to day fits the class of the model.
+
+74
+00:04:36.651 --> 00:04:38.611
+With these clouds in the model,
+
+75
+00:04:38.611 --> 00:04:42.152
+the barrier that sets the finest detail is again clouds,
+
+76
+00:04:42.152 --> 00:04:45.567
+the corona, or undetermined, depending on the choices.
+
+77
+00:04:45.984 --> 00:04:48.346
+But the real clouds do things that the
+
+78
+00:04:48.346 --> 00:04:51.454
+model does not have. Their values are lopsided and
+
+79
+00:04:51.454 --> 00:04:52.511
+have heavy tails,
+
+80
+00:04:52.511 --> 00:04:55.992
+unlike the bell curve. And they stay alike after two and
+
+81
+00:04:55.992 --> 00:04:58.229
+three days more than the model says.
+
+82
+00:04:58.651 --> 00:05:02.150
+So the paper treats the bound as a property of the model only.
+
+83
+00:05:03.684 --> 00:05:07.544
+Next, the paper sends real pictures through the imaging model.
+
+84
+00:05:07.984 --> 00:05:10.981
+The surface from the first half of each month is the
+
+85
+00:05:10.981 --> 00:05:14.553
+truth. The pictures from the second half go through the model,
+
+86
+00:05:14.553 --> 00:05:17.088
+and four methods try to recover the surface.
+
+87
+00:05:17.518 --> 00:05:20.734
+For each result, the paper divides the error by the bound.
+
+88
+00:05:21.151 --> 00:05:25.594
+Below two thirds, the result is below the bound. From two thirds to two,
+
+89
+00:05:25.594 --> 00:05:29.235
+it reaches the bound. Above two, it is away from the bound.
+
+90
+00:05:29.684 --> 00:05:34.274
+If the ratio and its range of uncertainty do not fall in one category,
+
+91
+00:05:34.274 --> 00:05:36.044
+the result is undetermined.
+
+92
+00:05:36.484 --> 00:05:38.533
+Near midnight, universal time,
+
+93
+00:05:38.533 --> 00:05:42.424
+the set of sizes used for the comparison was empty. So no
+
+94
+00:05:42.424 --> 00:05:47.613
+comparison was possible. This does not mean that the surface cannot be seen.
+
+95
+00:05:48.051 --> 00:05:51.441
+In 2024, 22 results were below the bound.
+
+96
+00:05:51.884 --> 00:05:56.031
+After seeing this, the paper built the bound separately for each time of day.
+
+97
+00:05:56.451 --> 00:06:01.478
+With this new bound, none of the 22 stayed below. 16 reached the bound,
+
+98
+00:06:01.478 --> 00:06:03.177
+and 6 were undetermined.
+
+99
+00:06:03.618 --> 00:06:08.126
+But this choice came after seeing the results. So the paper tested it again,
+
+100
+00:06:08.126 --> 00:06:08.957
+on other data.
+
+101
+00:06:10.484 --> 00:06:12.954
+Before it computed anything for 2023,
+
+102
+00:06:12.954 --> 00:06:15.157
+the paper fixed the new bound and
+
+103
+00:06:15.157 --> 00:06:20.698
+the methods. It also wrote down what would count as a finding that holds or breaks.
+
+104
+00:06:21.118 --> 00:06:23.536
+Then it used four months of 2023.
+
+105
+00:06:23.984 --> 00:06:28.571
+In 2023, no result of the main configuration was below the bound,
+
+106
+00:06:28.571 --> 00:06:30.405
+in any of the four months.
+
+107
+00:06:30.851 --> 00:06:33.676
+The results near midnight could not be compared,
+
+108
+00:06:33.676 --> 00:06:36.500
+again. Some results near noon were undetermined.
+
+109
+00:06:36.918 --> 00:06:39.783
+The other findings were checked too. Four held
+
+110
+00:06:39.783 --> 00:06:43.022
+again. One held only when the four months were taken
+
+111
+00:06:43.022 --> 00:06:46.136
+together. One could be applied in only two months.
+
+112
+00:06:46.136 --> 00:06:49.375
+One broke in one month. And one could not be tested.
+
+113
+00:06:49.818 --> 00:06:53.106
+The paper says that 2023 does not make the 2024
+
+114
+00:06:53.106 --> 00:06:56.673
+statements stronger. It shows what the same method,
+
+115
+00:06:56.673 --> 00:06:59.472
+fixed in advance, gives on other months.
+
+116
+00:07:00.518 --> 00:07:04.975
+The bound belongs to the declared model. It is not a limit for every method.
+
+117
+00:07:05.418 --> 00:07:08.140
+The paper does not say whether or when a mission
+
+118
+00:07:08.140 --> 00:07:10.920
+could take a picture of a planet of another star.
+
+119
+00:07:11.351 --> 00:07:14.981
+It uses one camera, one colour of light, two times of day,
+
+120
+00:07:14.981 --> 00:07:17.547
+and the stated months. It does not extend
+
+121
+00:07:17.547 --> 00:07:20.363
+these clouds to other planets or other times.
+
+122
+00:07:20.784 --> 00:07:22.702
+Some things are not in the model,
+
+123
+00:07:22.702 --> 00:07:26.362
+for example clouds on a round planet, and other kinds of noise.
+
+124
+00:07:26.784 --> 00:07:30.112
+To learn more, read the paper. The link is on this page.
+
+125
+00:07:30.551 --> 00:07:34.452
+This video was made with the help of AI. The voice is synthetic.

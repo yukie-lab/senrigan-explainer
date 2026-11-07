@@ -1,0 +1,59 @@
+{
+ "duration": 456.76,
+ "chapters": [
+  {
+   "id": "s1",
+   "title": "The Sun as a lens",
+   "title_ja": "太陽というレンズ",
+   "start": 0.0
+  },
+  {
+   "id": "s2",
+   "title": "How the picture is made",
+   "title_ja": "写真の作り方",
+   "start": 34.53
+  },
+  {
+   "id": "s3",
+   "title": "Three barriers and one bound",
+   "title_ja": "三つの壁と一つの下限",
+   "start": 79.06
+  },
+  {
+   "id": "s4",
+   "title": "Scale by scale",
+   "title_ja": "大きさごとに",
+   "start": 122.9
+  },
+  {
+   "id": "s5",
+   "title": "What “finest detail” means",
+   "title_ja": "「いちばん細かい所」の決め方",
+   "start": 165.66
+  },
+  {
+   "id": "s6",
+   "title": "Real clouds",
+   "title_ja": "本物の雲",
+   "start": 236.96
+  },
+  {
+   "id": "s7",
+   "title": "A test with real pictures",
+   "title_ja": "本物の写真で試す",
+   "start": 303.06
+  },
+  {
+   "id": "s8",
+   "title": "A test fixed in advance",
+   "title_ja": "前もって決めた試し",
+   "start": 369.86
+  },
+  {
+   "id": "s9",
+   "title": "What the paper does not claim",
+   "title_ja": "論文が主張しないこと",
+   "start": 420.4
+  }
+ ]
+}
